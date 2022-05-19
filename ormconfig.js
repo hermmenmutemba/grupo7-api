@@ -12,6 +12,6 @@ module.exports = [
       migrationsDir: process.env.TYPEORM_MIGRATIONS_DIR,
     },
     logging: ["error"],
-    synchronize: process.env.TYPEORM_synchronize,
+    synchronize:true,
   },
 ];

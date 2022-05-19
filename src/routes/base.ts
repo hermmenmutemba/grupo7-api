@@ -17,11 +17,17 @@ import {
   create_product
 } from "../controllers/base/productController";
 
+//import {
+ // get_all_projects,
+ // get_project,
+//  create_project
+//} from "../controllers/base/tabelaController";
+
 import {
-  get_all_projects,
-  get_project,
-  create_project
-} from "../controllers/base/projectController";
+  get_all_tabelas,
+  get_tabela,
+  create_tabela
+} from "../controllers/base/tabelaController";
 
 import authMiddleware from "../middlewares/auth";
 
@@ -39,10 +45,13 @@ baseRouter.get("/products", get_all_products)
 baseRouter.get("/products/:id", get_product)
 baseRouter.post("/products/", create_product)
 
-baseRouter.get("/projects", get_all_projects)
-baseRouter.get("/projects/:id", get_project)
-baseRouter.post("/projects/", create_project)
+//baseRouter.get("/projects", get_all_projects)
+//baseRouter.get("/projects/:id", get_project)
+//baseRouter.post("/projects/", create_project)
 
+baseRouter.get("/tabelas", get_all_tabelas)
+baseRouter.get("/tabelas/:intem", get_tabela)
+baseRouter.post("/tabelas/", create_tabela)
 
 //Change my password
 //router.post("/change-password", [checkJwt], AuthController.changePassword);

@@ -4,19 +4,19 @@ import { Entity, Column, PrimaryGeneratedColumn, ManyToOne,OneToOne, JoinColumn,
 export default class  Product {
   
   @PrimaryGeneratedColumn('increment')
-  id:number;
+  intem:number;
   
   @Column({length: 50, nullable:false })
-  code?: string
+  Designacao?: string
 
   @Column({length: 50, nullable:false })
-  description?: string
+  Descricao?: string
 
   @Column()
-  price: number
+  Unidade?: string
 
   @Column()  
-  json?: string;
+  Coeficiente: number;
 
 }
 
